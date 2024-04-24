@@ -61,6 +61,30 @@
                         </div>
                     </div>
                 </div>
+                <!-- Parallelogram Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="Triangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Triangle!</h2>
+                        <p>Area (A) = B X H</p>
+                        <div class="flex px-6">
+                            <input id="parallelogram-base" class="w-24 text-xl px-2 rounded-sm" type="text"
+                                placeholder="W">
+                            <span class="px-2">cm</span>
+                            <input id="parallelogram-height" class="w-24 text-xl px-2 rounded-sm" type="text"
+                                placeholder="L">
+                            <span class="px-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="parallelogram-area"></span><span>cm</span><sup>2</sup>
+                            </p>
+                        </div>
+                        <div class="card-actions ">
+                            <button onclick="calculateParallelogramArea()"
+                                class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
                 <!-- Triangle Card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -107,6 +131,7 @@
 
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
+    <script src="scripts/parallelogram-calculate.js"></script>
 </body>
 
 </html>
