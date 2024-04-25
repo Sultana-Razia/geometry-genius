@@ -85,6 +85,29 @@
                         </div>
                     </div>
                 </div>
+                <!-- Pentagon Card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Pentagon" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon!</h2>
+                        <p>Area (A) = 0.5 X P X A</p>
+                        <div class="flex px-6">
+                            <input id="pentagon-perimeter" class="w-24 text-xl px-2 rounded-sm" type="text"
+                                placeholder="Perimeter">
+                            <span class="px-2">cm</span>
+                            <input id="pentagon-apothem" class="w-24 text-xl px-2 rounded-sm" type="text"
+                                placeholder="Apothem">
+                            <span class="px-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="pentagon-area"></span><span>cm</span><sup>2</sup>
+                            </p>
+                        </div>
+                        <div class="card-actions ">
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
                 <!-- Triangle Card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -132,6 +155,7 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/pentagon-calculate.js"></script>
 </body>
 
 </html>
